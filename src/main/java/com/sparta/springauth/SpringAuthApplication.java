@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 // 기술지원 Bean 수동 등록
-@SpringBootApplication(exclude = SecurityAutoConfiguration.class, scanBasePackages = "com.sparta.springauth") // Spring Security 인증 기능 제외
+@SpringBootApplication // Spring Security 인증 기능 제외
 @EnableJpaRepositories("com.sparta.springauth.repository")
 @EntityScan("com.sparta.springauth.entity")
 public class SpringAuthApplication {
